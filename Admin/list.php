@@ -10,7 +10,7 @@
 	  $start=($cur_page-1)*$num;
 
 	  //1、查询每页展示条目数
-	  $link=mysqli_connect('127.0.0.1','root','root','all') or exit('连接失败');
+	  $link=mysqli_connect('127.0.0.1','root','root','wishwall') or exit('连接失败');
 	  $sql="select *from wish limit $start,$num";
 	  $res=mysqli_query($link,$sql);
 	  while($arr=mysqli_fetch_assoc($res)){

@@ -2,7 +2,7 @@
 	   header('content-type:text/html;charset=utf-8'); 
 	   //连接打开数据库  SQL语句 
 
-	   $link=mysqli_connect('127.0.0.1','root','root','all') or exit('连接失败');
+	   $link=mysqli_connect('127.0.0.1','root','root','wishwall') or exit('连接失败');
 	   $sql="select *from wish where is_pass=2";
 	   $res=mysqli_query($link,$sql);
 	   while($arr=mysqli_fetch_assoc($res)){

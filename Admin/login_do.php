@@ -4,7 +4,7 @@
          
       $name=empty($_POST['username'])?"":$_POST['username'];
       $pwd=empty($_POST['pwd'])?"":md5($_POST['pwd']);
-      $link=mysqli_connect('127.0.0.1','root','root','all') or exit('连接失败');
+      $link=mysqli_connect('127.0.0.1','root','root','wishwall') or exit('连接失败');
       $sql="select *from enter where e_name='$name' and pwd='$pwd'";
       $res=mysqli_query($link,$sql);
       if($res){

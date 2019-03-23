@@ -6,7 +6,7 @@
        $time=time();
 
 
-      $link=mysqli_connect('127.0.0.1','root','root','all') or exit('连接失败');
+      $link=mysqli_connect('127.0.0.1','root','root','wishwall') or exit('连接失败');
       $sql="insert into wish (username,content,add_time,is_pass)  values('$name','$content','$time','1')";
       //echo $sql;exit;
       $res=mysqli_query($link,$sql);

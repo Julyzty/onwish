@@ -3,7 +3,7 @@
       //接收id值 连接数据库 SQL语句 执行
       $id=$_GET['id'];
        
-      $link=mysqli_connect('127.0.0.1','root','root','all') or exit('连接失败');
+      $link=mysqli_connect('127.0.0.1','root','root','wishwall') or exit('连接失败');
       $sql="delete from wish where id=$id";
       $res=mysqli_query($link,$sql);
       if($res){
