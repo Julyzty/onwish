@@ -32,7 +32,14 @@
 				<span class='username'><?php echo $v['username']?></span>
 				<span class='num'>No.0000<?php echo $v['id']?></span>
 			</dt>
-			<dd class='content'><?php echo $v['content']?></dd>
+			<dd class='content'>
+			 <?php if($v['id']==8){ ?>
+			 <?php echo <img src="$v['content']" width="50" height='80'>?>
+			 <?php }else{ ?>
+				 <?php echo $v['content']?>
+			 <?php }?>
+			
+			</dd>
 			<dd class='bottom'>
 				<span class='time'><?php echo date('Y-m-d H:i:s',$v['add_time']);?></span>
 			</dd>
