@@ -34,7 +34,7 @@
 			</dt>
 			<dd class='content'>
 			 <?php if($v['id']==8){ ?>
-			 <?php echo <img src="$v['content']" width="50" height='80'>?>
+			  <img src="$v['content']" width="50" height='80'>
 			 <?php }else{ ?>
 				 <?php echo $v['content']?>
 			 <?php }?>
