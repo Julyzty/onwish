@@ -10,7 +10,7 @@
         echo '删除成功';
         header("refresh:2;url='list.php'");
     }else{
-        echo '删除失败111';
+        echo '删除失败1112';
         header("refresh:2;url='list.php'");
     }
 ?>
