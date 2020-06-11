@@ -7,7 +7,7 @@
       $sql="delete from wish where id=$id";
       $res=mysqli_query($link,$sql);
       if($res){
-        echo '删除成功';
+        echo '删除成功master';
         header("refresh:2;url='list.php'");
     }else{
         echo '删除失败1112';
