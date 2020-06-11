@@ -1,39 +1,3 @@
-.DS_Store
-*.sh
 
-Test.php
-Data.php
-*.zip
-*.log
-application/controllers/test/*
-application/cache/*
-application/tests/*
-application/config/rd_local/
-!application/cache/index.html
-!application/cache/.htaccess
-
-application/logs/*
-!application/logs/index.html
-!application/logs/.htaccess
-
-
-# IDE Files
-#-------------------------
-/nbproject/
 .idea/*
 
-## Sublime Text cache files
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
-*.sublime-project
-*.md
-router.php
-logs/*
-log/
-/log
-Tool.php
-application/controllers/test/
-untest/
-.htaccess
